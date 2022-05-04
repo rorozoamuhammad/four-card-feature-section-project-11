@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    width: 90%;
+    margin: 10vh auto;
+    flex-direction: column;
+}
+main {
+    text-align: center;
+    width: 45%;
+    margin: auto;
+    margin-bottom: 1.5em;
+}
+main h2 {
+    color: hsl(229, 6%, 66%);
+    font-weight: 400;
+    font-size: 2em;
+}
+main h1 {
+    color: hsl(234, 12%, 34%);
+    font-weight: 600;
+    font-size: 2.2em;
+    margin-bottom: .5em;
+}
+main p {
+    color: hsl(229, 6%, 66%);
+    font-weight: 200;
+    font-size: 1em;
+}
+header {
+    display: grid;
+    grid-template-areas: 
+        "supervisor builder calculator"
+        "supervisor karma calculator"
+    ;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.supervisor {
+    grid-area: supervisor;
+    border-top: 2px solid hsl(180, 62%, 55%);
+    background-color: hsl(0, 0%, 98%);
+    width: 80%;
+    margin-top: 5em;
+    margin: auto;
+    padding: 1em;
+    box-shadow: 0 5px 10px hsl(229, 6%, 66%);
+}
+.supervisor h2 {
+    color: hsl(234, 12%, 34%);
+    font-size: 1.4em;
+    font-weight: 600;
+}
+.supervisor p {
+    font-size: 1.1em;
+    font-weight: 200;
+    color: hsl(229, 6%, 66%);
+    margin-bottom: 2em;
+}
+.supervisor img {
+    margin-left: 75%;
+}
+.builder {
+    grid-area: builder;
+    border-top: 2px solid hsl(0, 78%, 62%);
+    background-color: hsl(0, 0%, 98%);
+    width: 80%;
+    margin: auto;
+    padding: 1em;
+    box-shadow: 0 5px 10px hsl(229, 6%, 66%);
+}
+.builder h2 {
+    color: hsl(234, 12%, 34%);
+    font-size: 1.4em;
+    font-weight: 600;
+}
+.builder p {
+    font-size: 1em;
+    font-weight: 200;
+    color: hsl(229, 6%, 66%);
+    margin-bottom: 2em;
+}
+.builder img {
+    margin-left: 75%;
+}
+.karma {
+    grid-area: karma;
+    border-top: 2px solid hsl(34, 97%, 64%);
+    background-color: hsl(0, 0%, 98%);
+    width: 80%;
+    margin: auto;
+    padding: 1em;
+    box-shadow: 0 5px 10px hsl(229, 6%, 66%);
+}
+.karma h2 {
+    color: hsl(234, 12%, 34%);
+    font-size: 1.4em;
+    font-weight: 600;
+}
+.karma p {
+    font-size: 1em;
+    font-weight: 200;
+    color: hsl(229, 6%, 66%);
+    margin-bottom: 2em;
+}
+.karma img {
+    margin-left: 75%;
+}
+.calculator {
+    grid-area: calculator;
+    border-top: 2px solid hsl(212, 86%, 64%);
+    background-color: hsl(0, 0%, 98%);
+    width: 80%;
+    padding: 1em;
+    margin: auto;
+    box-shadow: 0 5px 10px hsl(229, 6%, 66%);
+}
+.calculator h2 {
+    color: hsl(234, 12%, 34%);
+    font-size: 1.4em;
+    font-weight: 600;
+}
+.calculator p {
+    font-size: 1em;
+    font-weight: 200;
+    color: hsl(229, 6%, 66%);
+    margin-bottom: 2em;
+}
+.calculator img {
+    margin-left: 75%;
+}
+
+@media screen and (max-width: 375px) {
+    .container {
+        width: auto;
+    }
+    main {
+        width: 70%;
+    }
+    main h2 {
+        font-size: 1.5em;
+    }
+    main h1 {
+        font-size: 1.6em;
+    }
+    header {
+        grid-template-areas: 
+            "supervisor"
+            "builder"
+            "karma"
+            "calculator"
+        ;
+        grid-template-columns: 1fr;
+    }
+    .supervisor {
+        width: 70%;
+    }
+    .builder {
+        width: 70%;
+    }
+    .karma {
+        width: 70%;
+    }
+    .calculator {
+        width: 70%;
+    }
+}
+@media screen and (max-width: 576px) {
+    .container {
+        width: 80%;
+    }
+    main {
+        width: 80%;
+    }
+    header {
+        grid-template-areas: 
+            "supervisor"
+            "builder"
+            "karma"
+            "calculator"
+        ;
+        grid-template-columns: 1fr;
+    }
+}
